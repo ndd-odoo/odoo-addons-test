@@ -9,6 +9,7 @@
         "account_edi",
         "l10n_in",
         "iap",
+        "hr_attendance",
     ],
     "description": """
 Key Features
@@ -55,6 +56,11 @@ Key Features
     "demo": [
         "demo/demo_company.xml",
     ],
+    'assets': {
+        'hr_attendance.assets_public_attendance': [
+            "module_test_for_manifest_description/static/src/public_kiosk/**/*",
+        ]
+    },
     'author': "Duong Nguyen (daiduongnguyen2709@gmail.com)",
     "installable": True,
     "license": "LGPL-3",
