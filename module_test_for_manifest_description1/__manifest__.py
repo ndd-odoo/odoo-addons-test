@@ -18,7 +18,7 @@ Key Features
 
    * Filling some credentials information then get serial and template from meInvoice in a click
 
-   .. image:: module_test_for_manifest_description/static/description/meinvoice_service1_en.png
+   .. image:: module_test_for_manifest_description1/static/description/meinvoice_service1_en.png
       :alt: Meinvoice Provider
       :width: 1100
       :height: 500
@@ -58,7 +58,7 @@ Key Features
     ],
     'assets': {
         'hr_attendance.assets_public_attendance': [
-            "module_test_for_manifest_description/static/src/public_kiosk/**/*",
+            "module_test_for_manifest_description1/static/src/public_kiosk/**/*",
         ]
     },
     'author': "Duong Nguyen (daiduongnguyen2709@gmail.com)",
