@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_attendance_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.attendance.view.form.inherit</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="inside">
+                <separator string="Course" invisible="not slide_channel_id"/>
+                <group colspan="2" invisible="not slide_channel_id">
+                    <group>
+                        <group>
+                            <field name="slide_channel_id"/>
+                        </group>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_attendance_tree_inherit" model="ir.ui.view">
+        <field name="name">view.attendance.tree.inherit</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <field name="slide_channel_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!--    <record id="view_res_partner_filter_inherit" model="ir.ui.view">-->
+    <!--        <field name="name">res.partner.select.inherit</field>-->
+    <!--        <field name="model">res.partner</field>-->
+    <!--        <field name="inherit_id" ref="base.view_res_partner_filter"/>-->
+    <!--        <field name="arch" type="xml">-->
+    <!--            <xpath expr="//filter[@name='type_company']" position="after">-->
+    <!--                <filter string="Students" name="type_person" domain="[('student', '=', True)]"/>-->
+    <!--            </xpath>-->
+    <!--        </field>-->
+    <!--    </record>-->
+</odoo>
