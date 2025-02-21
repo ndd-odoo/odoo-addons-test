@@ -33,53 +33,59 @@
 		<div class="row mt-4 text-center position-relative z-2">
 			<div class="col-md-12" style="margin-bottom: 10%;">
 				<h2 style="color: #ffffff; font-weight: 700; font-size: 45px;">
-					BIDV Connector
+					BIDV Automatic QR Payment
 				</h2>
 				<div class="my-2" style="color: #ffffff;">
 					<p class="w-75 mx-auto" style="font-size: 18px; line-height: 25px;">
-						Connect Odoo with BIDV Open API, enabling automatic QR code payments for Sales Orders, Invoices, and POS transactions
+						Enable seamless QR-based payments via BIDV PayGate with automatic transaction processing
 					</p>
 				</div>
 				<div class="text-center d-xl-none w-100">
-					<img alt="BIDV Connector Overview" class="img-fluid" src="bidv_connector_overview.png"
+					<img alt="BIDV QR Payment Overview" class="img-fluid" src="payment_bidv_overview.jpg"
 						style="width: 100%; height: auto;" />
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Show ảnh overview demo có thể là bức ảnh thể hiện luồng quy trình hoặc ảnh thumpnailhoặc video demo nếu có bla bla -->
+	<!-- Show ảnh overview demo có thể là bức ảnh thể hiện luồng quy trình hoặc ảnh thumpnail hoặc video demo nếu có bla bla -->
 	<div class="row d-xl-block d-none position-relative" style="">
 		<div class="col-md-10 offset-md-1 text-center px-md-1"
 			style="border-radius: 20px; padding: 3px; background: #00BBCE; display: inline-block;">
-			<img alt="BIDV Connector Overview" class="img-fluid" loading="lazy"
-				src="bidv_connector_overview.png"
+			<img alt="BIDV QR Payment Overview" class="img-fluid" loading="lazy"
+				src="payment_bidv_overview.jpg"
 				style="border-radius: 15px; display: block; width: 100%; height: auto;" />
 		</div>
 	</div>
 </section>
 
 <!-- Key Features -->
-<section id="key_feature" class="py-4">
-	<div style="background-color: #F2F2F2; padding: 45px; border-radius: 15px;">
-		<h2 class="text-center mb-5" style="color: #21272B; font-size: 32px; font-weight: bold;">Key Features</h2>
-		<div style="padding: 24px; background-color: white; border-radius: 15px;">
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Directly connect Odoo with BIDV Open API https://openapi.bidv.com.vn/devportal</div>
-			</div>
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Add BIDV-specific connection fields and configurations</div>
-			</div>
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Enable automatic QR code payments for</div>
-				<ul>
-					<li>Sales Orders: module payment_bidv_viin (https://viindoo.com/apps/app/17.0/payment_bidv_viin).</li>
-					<li>Invoices: module payment_bidv_viin (https://viindoo.com/apps/app/17.0/payment_bidv_viin).</li>
-					<li>POS Orders: module viin_pos_qr_bidv (https://viindoo.com/apps/app/17.0/viin_pos_qr_bidv).</li>
-				</ul>
-			</div>
+<section class="oe_container pt-3">
+	<div class="oe_row oe_spaced">
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Instantly generate BIDV QR codes</h2>
+		<p>Instantly generate BIDV QR codes For</p>
+		<ul>
+			<li>Online purchases in e-commerce platforms.</li>
+			<li>Invoice/Sale payments: Each invoice/sale gets a unique QR code for quick and easy transactions.</li>
+		</ul>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="payment_bidv_overview.jpg" title="BIDV QR code payment" alt="BIDV QR code payment">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container pt-3">
+	<div class="oe_row oe_spaced">
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Automatically handle incoming payment notifications from BIDV</h2>
+		<p>Automatically handle incoming payment notifications from BIDV to</p>
+		<ul>
+			<li>Confirm successful payments in real time.</li>
+			<li>Update transaction records, create payment and mark invoices/sale order as paid.</li>
+		</ul>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="payment_bidv_pay_by_app.jpg" title="Scan QR using banking app" alt="Scan QR using banking app">
+		</div>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="payment_bidv_account_payment.png" title="Create Payment in Odoo" alt="Create Payment in Odoo">
 		</div>
 	</div>
 </section>
@@ -91,19 +97,15 @@
 		<div style="padding: 24px; background-color: white; border-radius: 15px;">
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Simplify BIDV QR code payments across all transactions</div>
+				<div>Fast & Hassle-Free Payments: Customers just scan the QR code and pay no extra steps required</div>
 			</div>
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Ensure secure and reliable bank connectivity</div>
+				<div>No Manual Reconciliation: Payments are automatically verified and updated in the system</div>
 			</div>
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Boost transaction efficiency and accuracy.</div>
-			</div>
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Prepare for advanced payment solutions.</div>
+				<div>Improved Cash Flow Management: Get real-time transaction updates and reduce payment delays</div>
 			</div>
 		</div>
 	</div>
@@ -236,12 +238,9 @@
 			Enhanced Integration Modules
 		</h2>
 		<p class="mb-5" style="text-align: center; font-size: 18px;">
-			Extend Your BIDV Connector with These Complementary Modules
+			Extend Your BIDV Automatic QR Payment with These Complementary Modules
 		</p>
 		<ul class="pl-4 mt-2 d-inline-block text-left">
-			<li class="mb-2">
-				<a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/payment_bidv_viin">BIDV Automatic QR Payment</a>
-			</li>
 			<li class="mb-2">
 				<a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/viin_pos_qr_bidv">Point of sale - BIDV QR code automatic payment</a>
 			</li>

@@ -33,53 +33,59 @@
 		<div class="row mt-4 text-center position-relative z-2">
 			<div class="col-md-12" style="margin-bottom: 10%;">
 				<h2 style="color: #ffffff; font-weight: 700; font-size: 45px;">
-					Kết nối ngân hàng BIDV
+					Thanh toán QR Tự động BIDV
 				</h2>
 				<div class="my-2" style="color: #ffffff;">
 					<p class="w-75 mx-auto" style="font-size: 18px; line-height: 25px;">
-						Kết nối hệ thống Odoo với BIDV Open API, hỗ trợ thanh toán QR Code tự động cho Đơn bán, Hóa đơn và Điểm bán lẻ
+						Cho phép thanh toán nhanh chóng qua mã QR của BIDV PayGate với xử lý giao dịch tự động
 					</p>
 				</div>
 				<div class="text-center d-xl-none w-100">
-					<img alt="BIDV Connector Overview" class="img-fluid" src="bidv_connector_overview_vi_VN.png"
+					<img alt="Thanh toán QR Tự động BIDV" class="img-fluid" src="payment_bidv_overview.jpg"
 						style="width: 100%; height: auto;" />
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Show ảnh overview demo có thể là bức ảnh thể hiện luồng quy trình hoặc ảnh thumpnailhoặc video demo nếu có bla bla -->
+	<!-- Show ảnh overview demo có thể là bức ảnh thể hiện luồng quy trình hoặc ảnh thumpnail hoặc video demo nếu có bla bla -->
 	<div class="row d-xl-block d-none position-relative" style="">
 		<div class="col-md-10 offset-md-1 text-center px-md-1"
 			style="border-radius: 20px; padding: 3px; background: #00BBCE; display: inline-block;">
-			<img alt="BIDV Connector Overview" class="img-fluid" loading="lazy"
-				src="bidv_connector_overview_vi_VN.png"
+			<img alt="Thanh toán QR Tự động BIDV" class="img-fluid" loading="lazy"
+				src="payment_bidv_overview.jpg"
 				style="border-radius: 15px; display: block; width: 100%; height: auto;" />
 		</div>
 	</div>
 </section>
 
 <!-- Key Features -->
-<section id="key_feature" class="py-4">
-	<div style="background-color: #F2F2F2; padding: 45px; border-radius: 15px;">
-		<h2 class="text-center mb-5" style="color: #21272B; font-size: 32px; font-weight: bold;">Tính năng chính</h2>
-		<div style="padding: 24px; background-color: white; border-radius: 15px;">
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Kết nối trực tiếp với BIDV Open API từ hệ thống Odoo https://openapi.bidv.com.vn/devportal</div>
-			</div>
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Thêm các trường thông tin kết nối dành riêng cho ngân hàng BIDV</div>
-			</div>
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Hỗ trợ thanh toán QR Code tự động cho</div>
-				<ul>
-					<li>Đơn bán: mô đun payment_bidv_viin (https://viindoo.com/vi/apps/app/17.0/payment_bidv_viin).</li>
-					<li>Hóa đơn: mô đun payment_bidv_viin (https://viindoo.com/vi/apps/app/17.0/payment_bidv_viin).</li>
-					<li>Đơn POS: mô đun viin_pos_qr_bidv (https://viindoo.com/vi/apps/app/17.0/viin_pos_qr_bidv).</li>
-				</ul>
-			</div>
+<section class="oe_container pt-3">
+	<div class="oe_row oe_spaced">
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Tạo ngay mã QR BIDV</h2>
+		<p>Tạo ngay mã QR BIDV để</p>
+		<ul>
+			<li>Thanh toán đơn hàng trên nền tảng thương mại điện tử.</li>
+			<li>Thanh toán hóa đơn/đơn bán: Mỗi hóa đơn/đơn bán có mã QR riêng để khách hàng thanh toán nhanh chóng.</li>
+		</ul>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="payment_bidv_overview.jpg" title="Thanh toán QR Tự động BIDV" alt="Thanh toán QR Tự động BIDV">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container pt-3">
+	<div class="oe_row oe_spaced">
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Xử lý tự động thông báo thanh toán từ BIDV</h2>
+		<p>Xử lý tự động thông báo thanh toán từ BIDV để</p>
+		<ul>
+			<li>Xác nhận giao dịch thành công theo thời gian thực.</li>
+			<li>Ghi nhận giao dịch và cập nhật trạng thái thanh toán trên hệ thống.</li>
+		</ul>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="payment_bidv_pay_by_app.jpg" title="Quét QR bằng app ngân hàng" alt="Quét QR bằng app ngân hàng">
+		</div>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="payment_bidv_account_payment_vi_VN.png" title="Tạo thanh toán trong Odoo" alt="Tạo thanh toán trong Odoo">
 		</div>
 	</div>
 </section>
@@ -91,19 +97,15 @@
 		<div style="padding: 24px; background-color: white; border-radius: 15px;">
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Tích hợp thanh toán QR Code BIDV cho các giao dịch Odoo</div>
+				<div>Thanh toán nhanh chóng, không cần thao tác rườm rà: Khách hàng chỉ cần quét mã QR là xong</div>
 			</div>
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Đảm bảo kết nối an toàn và đồng bộ hóa dữ liệu giao dịch</div>
+				<div>Không cần kiểm tra thủ công: Hệ thống tự động xác nhận và cập nhật thanh toán</div>
 			</div>
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Nâng cao hiệu suất xử lý và giảm thiểu sai sót.</div>
-			</div>
-			<div class="d-flex align-items-center gap-3 p-3">
-				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Chuẩn bị sẵn sàng cho các giải pháp thanh toán nâng cao.</div>
+				<div>Kiểm soát dòng tiền tốt hơn: Theo dõi giao dịch theo thời gian thực, hạn chế tình trạng chậm thanh toán</div>
 			</div>
 		</div>
 	</div>
@@ -237,12 +239,9 @@
 			Các mô-đun tích hợp nâng cao
 		</h2>
 		<p class="mb-5" style="text-align: center; font-size: 18px;">
-			Mở rộng kết nối ngân hàng BIDV của bạn với các mô-đun bổ sung này
+			Mở rộng Thanh toán QR Tự động BIDV của bạn với các mô-đun bổ sung này
 		</p>
 		<ul class="pl-4 mt-2 d-inline-block text-left">
-			<li class="mb-2">
-				<a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/payment_bidv_viin">Thanh toán QR Tự động BIDV</a>
-			</li>
 			<li class="mb-2">
 				<a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/viin_pos_qr_bidv">Điểm bán lẻ - Tự động thanh toán mã QR với BIDV</a>
 			</li>
