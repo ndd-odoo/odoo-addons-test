@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <record id="hr.open_view_employee_list_my" model="ir.actions.act_window">
-        <field name="domain">[('employee_type', '!=', 'student')]</field>
-    </record>
-</odoo>
