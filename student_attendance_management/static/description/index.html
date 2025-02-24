@@ -33,15 +33,15 @@
 		<div class="row mt-4 text-center position-relative z-2">
 			<div class="col-md-12" style="margin-bottom: 10%;">
 				<h2 style="color: #ffffff; font-weight: 700; font-size: 45px;">
-					POS QR Automatic Payment
+					Point of sale - BIDV QR code automatic payment
 				</h2>
 				<div class="my-2" style="color: #ffffff;">
 					<p class="w-75 mx-auto" style="font-size: 18px; line-height: 25px;">
-						Automatically generate QR codes for POS payments, enabling instant scan-and-pay transactions with real-time confirmation
+						Integrate BIDV QR payment with POS, enabling automatic pos order confirmation and payment processing
 					</p>
 				</div>
 				<div class="text-center d-xl-none w-100">
-					<img alt="POS QR Automatic Payment" class="img-fluid" src="viin_pos_qr_overview.png"
+					<img alt="POS BIDV QR Automatic Payment" class="img-fluid" src="viin_pos_qr_overview.png"
 						style="width: 100%; height: auto;" />
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 	<div class="row d-xl-block d-none position-relative" style="">
 		<div class="col-md-10 offset-md-1 text-center px-md-1"
 			style="border-radius: 20px; padding: 3px; background: #00BBCE; display: inline-block;">
-			<img alt="POS QR Automatic Payment" class="img-fluid" loading="lazy"
+			<img alt="POS BIDV QR Automatic Payment" class="img-fluid" loading="lazy"
 				src="viin_pos_qr_overview.png"
 				style="border-radius: 15px; display: block; width: 100%; height: auto;" />
 		</div>
@@ -61,26 +61,42 @@
 <!-- Key Features -->
 <section class="oe_container pt-3">
 	<div class="oe_row oe_spaced">
-		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Configure QR Payment Method in POS</h2>
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">BIDV Service Configuration</h2>
 		<ul>
-			<li>Add QR Payment to Pos payment method pos.payment.method</li>
-			<li>Set up provider details and QR payment method for each pos payment method.</li>
+			<li>Set up <strong>BIDV PayGate</strong> as the QR provider for POS payment methods</li>
+			<li>Link BIDV accounts using <strong>Merchant ID</strong>, <strong>API Key</strong>, and other credentials which is config in payment provider and company setting</li>
 		</ul>
 		<div class="oe_demo oe_screenshot">
-			<img class="" src="viin_pos_qr_overview.png" title="POS QR Automatic Payment" alt="POS QR Automatic Payment">
+			<img class="" src="viin_pos_qr_overview.png" title="POS IDV QR Automatic Payment" alt="POS BIDV QR Automatic Payment">
 		</div>
 	</div>
 </section>
 
 <section class="oe_container pt-3">
 	<div class="oe_row oe_spaced">
-		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Instant QR Code Generation</h2>
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">BIDV QR Code Integration</h2>
 		<ul>
-			<li>Generate unique QR codes for each POS order when QR Payment is selected.</li>
-			<li>Customers scan the QR code and pay instantly via mobile devices.</li>
+			<li>Automatically generate <strong>QR code</strong> when confirming a POS order</li>
+			<li>Each QR code is unique to the order, ensuring accurate transactions</li>
 		</ul>
 		<div class="oe_demo oe_screenshot">
-			<img class="" src="viin_pos_qr_gen_qr.png" title="Pos Instant QR Code Generation" alt="Pos Instant QR Code Generation">
+			<img class="" src="viin_pos_qr_gen_qr.png" title="Pos BIDV Instant QR Code Generation" alt="Pos BIDV Instant QR Code Generation">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container pt-3">
+	<div class="oe_row oe_spaced">
+		<h2 class="oe_slogan" style="color: rgb(28, 113, 216);">Automatic Pos Order Validation</h2>
+		<ul>
+			<li>Once the customer pays, BIDV sends a <strong>webhook</strong> notification</li>
+			<li>The system automatically validate the POS order and records the pos payment and account payment in real-time</li>
+		</ul>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="viin_bidv_pos_qr_payment.png" title="Pos QR Payment" alt="Pos QR Payment">
+		</div>
+		<div class="oe_demo oe_screenshot">
+			<img class="" src="viin_bidv_pos_qr_account_payment.png" title="Pos QR Account Payment" alt="Pos QR Account Payment">
 		</div>
 	</div>
 </section>
@@ -100,7 +116,11 @@
 			</div>
 			<div class="d-flex align-items-center gap-3 p-3">
 				<i class="fa fa-dot-circle-o me-3"></i>
-				<div>Error-Free Processing: No manual data entry required</div>
+				<div>Seamless Integration: Orders, payments, and receipts are fully synchronized</div>
+			</div>
+			<div class="d-flex align-items-center gap-3 p-3">
+				<i class="fa fa-dot-circle-o me-3"></i>
+				<div>Easy Configuration: Connect BIDV with POS and start accepting QR payments</div>
 			</div>
 		</div>
 	</div>
@@ -227,7 +247,7 @@
 </section>
 
 <!-- Combo Module -->
-<section id="combo_module_block" class="py-4">
+<!-- <section id="combo_module_block" class="py-4">
 	<div style="background-color: #F2F2F2; border-radius: 15px;" class="p-5">
 		<h2 class="text-center" style="color: #21272B; font-size: 32px; font-weight: bold;">
 			Enhanced Integration Modules
@@ -241,4 +261,4 @@
 			</li>
 		</ul>
 	</div>
-</section>
+</section> -->
